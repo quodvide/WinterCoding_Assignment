@@ -5,6 +5,7 @@
     <title>TodoList</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <nav class="navbar navbar-default" style="background-color : #5DA4BE; height:80px;">
@@ -14,12 +15,46 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top:15px;">
-            <ul class="nav navbar-nav" style="float: right; ">
-                <li><a href="/reserve" style="font-size:20px; text-align:center; color:#FFFF">할 일 추가</a></li>
-            </ul>
+            
         </div><!— /.navbar-collapse —>
     </div><!— /.container-fluid —>
 </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="todolist">
+                <h1>Todos</h1>
+                <button class="btn btn-success">Add Todo</button>
+                <hr>
+                <ul id="todoList" class="list-unstyled">
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Take out the trash</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Buy bread</label>
+                        </div>
+                    </li>
+                    <li class="ui-state-default">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" />Teach penguins to fly</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
 
 <div class ="panel panel-default" style="border:0px;">
     <div class="panel-footer" style="background-color : #5DA4BE; color:#FFFF; text-align:center; position:fixed;
