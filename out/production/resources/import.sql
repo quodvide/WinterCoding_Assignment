@@ -1,0 +1,1 @@
+insert into Todo (title, content, due_date) values ('Hello', 'World~~', '2018-10-10')

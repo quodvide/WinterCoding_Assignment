@@ -1,6 +1,7 @@
 package todolist.domain;
 
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -21,4 +22,14 @@ public class Todo {
 
     @Column(nullable = true)
     private LocalDate dueDate;
+
+    @Override
+    public String toString() {
+        return "Todo{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", dueDate=" + dueDate +
+                '}';
+    }
 }
